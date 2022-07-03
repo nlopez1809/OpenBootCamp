@@ -1,0 +1,67 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        //Ejercicio 1
+        Scanner scan = new Scanner(System.in);
+        System.out.printf("Ingrese un numero:");
+        int numeroif = scan.nextInt();
+        if(numeroif<0 || numeroif>0 || numeroif==0)
+        {
+            if(numeroif<0)
+            {
+            System.out.printf("El numero es menor de 0\n");   
+            }
+            if(numeroif>0)
+            {
+            System.out.printf("El numero es mayor de 0\n");   
+            }
+            if(numeroif==0)
+            {
+            System.out.printf("El numero es igual a 0\n");   
+            }
+        }
+
+        //Ejercicio 2 while
+        int numeroWhile=0;
+        System.out.printf("\n");
+        while(numeroWhile<3)
+        {
+            System.out.printf("%d \n",numeroWhile);
+            numeroWhile++;
+        }
+
+        //Ejercicio 3 do-while
+        numeroWhile=0;
+        System.out.printf("\n");
+        do{
+            System.out.printf("%d \n",numeroWhile);
+            numeroWhile=numeroWhile+3;
+        }while(numeroWhile<3);
+        
+	  //Ejercicio 4 FOR
+        for(int numeroFor=0;numeroFor<=3;numeroFor++)
+        {
+            System.out.printf("%d \n",numeroFor);
+        }
+
+        //Ejercicio 5 switch
+        String estation = "Invierno";
+        switch(estation){
+            case "Verano":
+                System.out.printf("Es Verano");
+                break;
+            case "Invierno":
+                System.out.printf("Es Invierno");
+                break;
+            case "Otono":
+                System.out.printf("Es Otono");
+                break;
+            case "Primavera":
+                System.out.printf("Es Primavera");
+                break;
+            default:
+                System.out.printf("No escribio una estacion valida");
+        }
+        
+    }
+}
