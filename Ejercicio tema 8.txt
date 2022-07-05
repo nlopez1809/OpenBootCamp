@@ -1,0 +1,43 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    //Creamos el objeto persona
+		Persona persona = new Persona();
+	//seteo valores para los atributos del objeto persona
+	    persona.setEdad(20);
+	    persona.setNombre("Luis");
+	    persona.setTelefono(76806091);
+	    
+	 //Imprimo directamente los valores obtenido por los metodos get de cada atributo
+	    System.out.println(persona.getEdad());
+	    System.out.println(persona.getNombre());
+	    System.out.println(persona.getTelefono());
+	}
+}
+//Creamos la clase Persona
+class Persona{
+//Creamos las variables
+    private int Edad;
+    private String Nombre;
+    private int Telefono;
+    
+//Creamos get y sets de cada propiedad
+    public void setEdad(int Edad){
+        this.Edad = Edad;
+    }
+    public int getEdad(){
+        return this.Edad;
+    }
+    public void setNombre(String Nombre){
+        this.Nombre = Nombre;
+    }
+    public String getNombre(){
+        return this.Nombre;
+    }
+    public void setTelefono(int Telefono){
+        this.Telefono = Telefono;
+    }
+    public int getTelefono(){
+        return this.Telefono;
+    }
+}
