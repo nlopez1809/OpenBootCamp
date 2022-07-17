@@ -1,0 +1,10 @@
+inicial = input("Escribe el primer numero del rango: ")
+inicial = int (inicial)
+
+final = input("Escribe el numero final del rango: ")
+final = int (final)
+for numero in range(inicial,final,1):
+  if numero % 2 == 0 :
+    continue
+  else :
+      print("El número", numero, "es impar")
