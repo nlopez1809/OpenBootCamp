@@ -1,0 +1,17 @@
+class Vehiculo:
+    color = "Azul"
+    Ruedas = 4
+    Puertas = 4
+
+class Coche(Vehiculo):
+    vehiculo = Vehiculo()
+    Velocidad = 100
+    Cilindrada = 1000
+
+C = Coche()
+
+print("El color del coche es: ",C.vehiculo.color)
+print("El número de Ruedas del coche es: ",C.vehiculo.Ruedas)
+print("El número de puertas del coche es: ",C.vehiculo.Puertas)
+print("La velocidad que alcanza el coche es: ",C.Velocidad, "Km/h")
+print("La cilindrada del motor es: ", C.Cilindrada, ".cc")
