@@ -1,0 +1,13 @@
+class Alumno:
+    def __init__(self, Nombre, Nota):
+        self.Nombre = Nombre
+        self.Nota = Nota
+    def aprobado(self):
+        if(self.Nota>=51):
+            print("Aprobado")
+        else:
+            print("Reprobado")
+
+Alumno = Alumno("Tito",40)
+
+Alumno.aprobado()
