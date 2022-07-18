@@ -1,0 +1,20 @@
+# Area del triangulo
+def area_Triangulo(base,altura):
+  area = (base * altura)/2
+  return area
+#Area Circulo
+def area_Circulo(radio):
+  pi = 3.14
+  return pi*(radio **2)
+
+base=input("Ingrese la base del triangulo: ")
+base = int (base)
+altura = input("Ingrese la altura del triangulo: ")
+altura = int(altura)
+area = area_Triangulo(base,altura)
+print("El area del triangulo es : ", area)
+
+radio = input ("Ingrese el radio del circulo: ")
+radio = int (radio)
+area_C = area_Circulo(radio)
+print("El area del Circulo es", area_C)
