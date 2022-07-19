@@ -1,0 +1,32 @@
+Operaciones.py
+
+def Suma(a,b):
+    return a + b
+
+def Resta(a,b):
+    return a - b
+
+def Multiplicacion(a,b):
+    return a * b
+
+def Division(a,b):
+    return a / b
+
+
+---------------------
+main.py
+
+import Operaciones
+
+a = input("Ingrese un número: ")
+a = int (a)
+
+b = input("Ingrese otro número: ")
+b = int(b)
+
+
+if __name__ == '__main__':
+    print(Operaciones.Suma(a,b))
+    print(Operaciones.Resta(a, b))
+    print(Operaciones.Multiplicacion(a,b))
+    print(Operaciones.Division(a, b))
