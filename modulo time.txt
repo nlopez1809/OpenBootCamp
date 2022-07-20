@@ -1,0 +1,17 @@
+import time
+
+if __name__ == '__main__':
+
+    tiempo_actual = time.localtime()
+    hora_salida = 19
+    minuto_salida = 0
+    segundo_salida = 0
+
+    if time.localtime().tm_hour >=  19:
+        print("HORA DE IR A CASA, LA HORA ACTUAL ES: ",time.localtime().tm_hour,":",time.localtime().tm_min,":",time.localtime().tm_sec)
+    else:
+        hora_faltante = 19 - time.localtime().tm_hour
+        minuto_faltante = 60 - time.localtime().tm_min
+        segundo_faltante = 60 - time.localtime().tm_sec
+        print("VUELVE A TRABAJAR, AUN FALTAN",hora_faltante,":",minuto_faltante,":",segundo_faltante)
+
