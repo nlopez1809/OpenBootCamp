@@ -1,0 +1,9 @@
+if __name__ == '__main__':
+
+    archivo = open('datos.txt', 'w')
+    datos = archivo.write('Abro el archivo por primera vez\n')
+    archivo.close()
+
+    archivo = open('datos.txt', 'r+')
+    archivo.readline()
+    archivo.write('Abro el archivo por segunda vez.\n')
