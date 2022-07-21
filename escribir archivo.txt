@@ -1,5 +1,0 @@
-if __name__ == '__main__':
-
-    archivo = open('datos.txt', 'w')
-    datos = archivo.write('EJEMPLO')
-    archivo.close()
