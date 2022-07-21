@@ -1,0 +1,21 @@
+from pickle import *
+class Vehiculo:
+    def __init__(self,color,ruedas,puertas):
+        self.color = color
+        self.ruedas = ruedas
+        self.puertas = puertas
+    def __str__(self):
+        return self.color + " " + self.ruedas + " " + self.puertas
+
+if __name__ == '__main__':
+
+    auto = Vehiculo("Negro","4","4")
+
+    archivo = open('Vehiculo','w+b')
+    dump(auto,archivo)
+
+
+    archivo.seek(0)
+    auto2 = load(archivo)
+    print(auto2)
+    archivo.close()
