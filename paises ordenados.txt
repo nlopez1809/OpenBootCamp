@@ -1,0 +1,19 @@
+def Pedir_Pais():
+  pais = input("Ingrese varios paises separados por , :")
+  return pais
+
+if __name__ == '__main__':
+    lista = []
+    i=0
+    cant = int(input("Ingrese la cantidad de paises por agregar :"))
+    while i < cant:
+      pais = Pedir_Pais()
+      if pais is not lista:
+        lista.append(pais)
+      else:
+        pais = input("Ingrese un país ya existente, ingrese otro país :")
+      i += 1
+    print(lista)
+    lista_ordenada = set(lista)
+    lista_ordenada= sorted(lista)
+    print(lista_ordenada)
