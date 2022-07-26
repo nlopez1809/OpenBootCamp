@@ -1,0 +1,10 @@
+from tkinter import *
+master = Tk()
+elemento = StringVar()
+listbox = Listbox(master)
+for item in ["Barcelona", "Real Madrid", "Manchester U.", "PSG", "Sevilla", "Bayern M.", "Manchester C.", "Chealsea"]:
+ listbox.insert(END, item)
+listbox.pack()
+label = Label(text="Lista de nombres de equipos")
+label.pack()
+master.mainloop()
