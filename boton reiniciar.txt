@@ -1,0 +1,21 @@
+from tkinter import Button, ttk
+import tkinter
+
+window = tkinter.Tk()
+
+window.columnconfigure(0, weight=1)
+window.columnconfigure(0, weight=3)
+
+seleccion = tkinter.StringVar()
+R1 = ttk.Radiobutton(window, text='Primera', value='1', variable=seleccion)
+R2 = ttk.Radiobutton(window, text='Segunda', value='2', variable=seleccion)
+R3 = ttk.Radiobutton(window, text='Tercera', value='3', variable=seleccion)
+
+R1.grid(column=0, row=1, pady=5, padx=5)
+R2.grid(column=0, row=2, pady=5, padx=5)
+R3.grid(column=0, row=3, pady=5, padx=5)
+
+
+botonReiniciar = ttk.Button(window, text='Reiniciar')
+botonReiniciar.grid(column=0, row=4, pady=5, padx=5)
+window.mainloop()
